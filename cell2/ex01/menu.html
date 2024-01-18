@@ -4,15 +4,42 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link rel="stylesheet" href="menu.css">
 </head>
 <body>
-	<label for="Hamburguesas">Selecciona tu hamburguesa</label>
-		<select name="Hamburguesas" id="Hamburguesas">
-			<option value="Simple">Hamburguesa Simple</option>
-			<option value="Queso">Hamburguesa con queso</option>
-			<option value="Bacon">Hamburguesa con bacon</option>
-			<option value="Huevo">Hamburguesa con huevo</option>
-			<option value="Barbacoa">Hamburguesa con salsa barbacoa</option>
-		</select>
+	<input type="checkbox" id="menu_hamburguesa">
+	<div id="header">
+		<label for="menu_hamburguesa" class="menu_icon">&#9776;</label>
+		<ul class="nav">
+			<li><a href="#">Inicio</a></li>
+			<li><a href="#">Productos</a>
+				<ul>
+					<li><a href="hamburguesa_simple.jpeg">Hamburguesa simple</a></li>
+					<li><a href="#">Hamburguesa con queso</a>
+						<ul>
+							<li><a href="#">Añade bacon a tu Hamburguesa</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Hamburguesa con bacon</a></li>
+					<li><a href="#">Hamburguesa con huevo</a></li>
+					<li><a href="#">Hamburguesa showarma</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Servicios</a>
+				<ul>
+					<li><a href="#">Submenu 1</a></li>
+					<li><a href="#">Submenu 2</a></li>
+					<li><a href="#">Submenu 3</a>
+						<ul>
+							<li><a href="#">Submenu 1</a></li>
+							<li><a href="#">Submenu 2</a></li>
+							<li><a href="#">Submenu 3</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#">Contacto</a></li>
+		</ul>
+	</div>
 </body>
 </html>
