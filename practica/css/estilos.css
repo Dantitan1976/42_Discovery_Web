@@ -1,0 +1,307 @@
+/*Importamos el tipo de letra que queremos desde Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+/*Aplicamos las propiedades del cuerpo de la web*/
+body {
+	font-family: 'Poppins', sans-serif; /*Tipo de letra*/
+	background: #F4DDE6; /*Color de fondo de la web*/
+	color: black; /*Color de las letras*/
+	margin: 0;
+	padding: 1em;
+}
+
+a { /*Color de los enlaces*/
+	color: black; /*Color de la letra*/
+	text-decoration: none; /*Para que salga sólo el texto sin subrayado en el enlace*/
+}
+
+a.actual {
+	font-weight: bold; /*Texto en negrita para el botón de Inicio*/
+}
+
+header div.contenedor { /*Color de la barra de inicio*/
+	background: #FFFFFF;
+	display: flex; /*Hacemos que las listas del menú de la cabecera aparezcan en la misma linea*/
+	place-content: space-between; /*Hacemos que las listas del menú de la cabecera aparezcan en la misma linea*/
+} 
+
+header h1 {
+	font-size: 1.2em;
+	margin-top: 0;
+}
+
+header h1 > a > span { /*En el letrero de la barra de inicio hemos puesto span para cambiar de color el texto Alba Soto.
+	Ahora le damos color*/
+	color: blue;
+}
+
+header h1 > a {
+	word-spacing: -0.2em;
+	padding: 1em;
+}
+
+p.eslogan {
+	color: lightslategray;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+
+main h2 {
+	font-size: 3em;
+}
+
+main h2 >span {
+	color: blue
+}
+/* Ponemos cuando queremos que todo aparezca a dos columnas */
+main div.contenedor {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#servicios {
+	background: #F9B3C1;
+}
+
+#servicios h2 {
+	font-size: 1.5em;
+}
+
+#servicios ul {
+	margin-left: 2em;
+	position: relative;
+}
+
+#servicios ul li:before {
+	content: ' ';
+	position: absolute;
+	left: -2em;
+	width: 30px;
+	height: 30px;
+	background-image: url(../imagenes/rosas-removebg-preview.png);
+	background-size: contain;
+
+}
+#productos {
+	background: #E8E8E8;
+}
+
+#opiniones h2 {
+	font-size: 2em;
+}
+
+#opiniones li{
+	background: #EAC1D4;
+	color:black;
+}
+
+#opiniones li img {
+	width: 5em;
+	height: 5em;
+}
+
+#opiniones ul {
+	margin-top: 4em;
+}
+
+footer {
+	background: #FFFFFF;
+	color: black;
+	padding: 1em;
+	margin: 0;
+}
+
+footer a {
+	color: black;
+}
+
+footer ul { /*Para eliminar el margen inferior del pie de página*/
+	margin-bottom: 0;
+}
+/****** Paso 3 ******/
+.boton-principal {
+	background: green;
+	color: white;
+	border: 3px solid green;
+	border-radius: 5em;
+	font-weight: bold;
+	padding: 0.5em 1.1em;
+	font-size: 1.4em;
+	display: inline-block;
+}
+
+.boton-principal:hover {
+	background: white;
+	color: green;
+}
+
+.boton-invertido {
+	background: white;
+	color: green;
+	border: 3px solid green;
+	border-radius: 5em;
+	font-weight: bold;
+	padding: 0.2em 0.8em;
+}
+
+.boton-invertido:hover {
+	background: green;
+	color: white;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+/*header ul, #servicios ul, footer ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}*/
+
+header ul, #opiniones ul, footer ul {
+	display: flex;
+	place-content: space-between;
+}
+
+header div.contenedor {
+	display: flex;
+	place-content: space-between;
+}
+
+/**** Paso 4 ****/
+div.contenedor {
+	width: 1080px;
+	margin: 0 auto;
+}
+
+header a {
+	padding: 1em;
+}
+
+main img {
+	width: 30%;
+	height: 30%;
+}
+
+main {
+	padding-top: 6em;
+	padding-bottom: 6em;
+}
+
+/**** Paso 5 ****/
+
+#servicios {
+	position: relative;
+	font-size: 1.4em;
+	padding-top: 7em;
+	padding-bottom: 7em;
+}
+
+#servicios ul {
+	margin-left: 5em;
+}
+
+#servicios li {
+	margin-bottom: 1em;
+}
+
+#servicios img {
+	display: block;
+	position: absolute;
+	right: 2.5em;
+	bottom: 1.5em;
+	width: 350px;
+}
+
+#servicios:before {
+	content: "";
+	position: absolute;
+	width: 10%;
+	height: 15em;
+	background-color: #E8E8E8;
+	left: 0;
+	top: -4em;
+}
+
+#servicios:after {
+	content: "";
+	position: absolute;
+	width: 500px;
+	height: 20em;
+	background: url(../imagenes/ramo-de-longuiflorum-y-rosas-rojas-removebg-preview.png) no-repeat;
+	background-size: 75% 75%;
+	left: 1em;
+	top: -5em;
+}
+
+#opiniones {
+	padding-top: 10em;
+	padding-bottom: 10em;
+}
+
+#opiniones ul li {
+	margin: 0 1em;
+	text-align: center;
+	padding: 2em 1em;
+	width: 80%;
+	border-radius: 1em;
+
+}
+
+#opiniones ul li img {
+	border: 5px solid pink;
+	border-radius: 50%;
+	margin-top: -5em;
+}
+
+#contacta {
+	background: lightgray;
+	position: relative;
+	padding-top: 5em;
+	padding-bottom: 5em;
+}
+
+#contacta h2 {
+	font-size: 2em;
+}
+
+#contacta label {
+	display: block;
+	font-size: 1.2em;
+	margin-bottom: 0.5em;
+}
+
+#contacta input, #contacta textarea {
+	width: 100%;
+	padding: 0.8em;
+	margin-bottom: 1em;
+	border-radius: 0.3em;
+	box-sizing: border-box;
+}
+
+#contacta button {
+	cursor: pointer;
+}
+
+#contacta div.contenedor div {
+	width: 45%;
+}
+
+#contacta iframe {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 45%;
+	height: 100%;
+}
+
+h2.Título {
+	margin-top: -3em;
+}
+
+footer ul {
+	place-content: space-evenly;
+}

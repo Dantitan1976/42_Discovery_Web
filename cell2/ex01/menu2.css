@@ -1,0 +1,154 @@
+* {
+	font-family: Arial
+}
+
+#header {
+	margin: auto;
+	width: 1000px;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+input:checked  ~ ul {
+	display:block;
+}
+
+input {
+	display: none;
+}
+
+/*Estilo del botón del menú hamburguesa*/
+label {
+	box-sizing: border-box;
+	display: inline-block;
+	border: 1px solid black;
+	border-radius: 5px;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	font-weight: bold;
+	text-align: center;
+	user-select: none;
+}
+
+/* Estilo del boton cuando se pasa el mouse por encima*/
+label:hover{
+	background: grey;
+}
+
+/* Estilo del boton cuando el menú está expandido*/
+input:checked ~ label {
+	background: lightgrey; 
+}
+
+ul{
+	margin-top:0;
+	padding: 0;
+	width: block;
+  
+}
+
+li {
+	display: block;
+	background: lightgrey;
+	margin: 0;
+	padding: 10px;
+	list-style: none;
+	border-bottom: 1px solid grey;
+  }
+
+*.nav li a {
+	background-color: black;
+	color: white;
+	text-decoration: none;
+	padding: 10px 15px;
+	display: block;
+}
+
+.nav li a:hover {
+	background-color: gray;
+}
+
+.nav > li {
+	float: left;
+}
+
+.nav li ul {
+	display:none;
+	position: absolute;
+	min-width: 140px;
+}
+
+.nav li:hover > ul {
+	display: block;
+}
+
+.nav li ul li {
+	display: block;
+	position: relative
+}
+
+.nav li ul li ul {
+	left: 100%;
+	top: 0px;
+	width: 100%;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-icon {
+    cursor: pointer;
+}
+
+#menu-container {
+    display: none;
+}
+
+#menu-toggle:checked + #menu-icon + #menu-container {
+    display: block;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.nav > li {
+    margin-bottom: 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.nav a:hover {
+    background-color: gray;
+}
+
+/* Estilos del menú desplegable */
+/*#menu-container input[type="checkbox"] {
+    display: none;
+}
+
+#menu-container label {
+    cursor: pointer;
+}
+
+#menu-container ul {
+    display: none;
+}
+
+#menu-container input[type="checkbox"]:checked + label + ul {
+    display: block;
+}
+
+#menu-container ul ul {
+    margin-top: 0;
+}
